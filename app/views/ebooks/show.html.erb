@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @ebook.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @ebook.description %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @ebook.author %>
+</p>
+
+<%= link_to 'Edit', edit_ebook_path(@ebook) %> |
+<%= link_to 'Back', ebooks_path %>
