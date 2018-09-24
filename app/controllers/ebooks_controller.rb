@@ -10,11 +10,22 @@ class EbooksController < ApplicationController
   # GET /ebooks/1
   # GET /ebooks/1.json
   def show
+    @ebook = Ebook.find(params[:id])
   end
 
   # GET /ebooks/new
   def new
     @ebook = Ebook.new
+    # reader = Epub::Reader.open("/path/to/@ebook.epub")
+    # puts reader.epub_version
+    # puts reader.title
+    # puts reader.author
+    # puts reader.description
+    # puts reader.content
+    # reader.pages.each do |page|
+    #   puts page.title
+    #   puts page.content
+    # end
   end
 
   # GET /ebooks/1/edit
@@ -25,7 +36,7 @@ class EbooksController < ApplicationController
   # POST /ebooks.json
   def create
     @ebook = Ebook.new(ebook_params)
-
+ 
     respond_to do |format|
       if @ebook.save
         format.html { redirect_to @ebook, notice: 'Ebook was successfully created.' }
