@@ -15,5 +15,9 @@
   <%= @ebook.author %>
 </p>
 
+</p>
+<%= link_to 'View Ebook', @ebook.file %>
+<p>
+
 <%= link_to 'Edit', edit_ebook_path(@ebook) %> |
 <%= link_to 'Back', ebooks_path %>
