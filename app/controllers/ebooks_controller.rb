@@ -1,4 +1,5 @@
 class EbooksController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_ebook, only: [:show, :edit, :update, :destroy]
 
   # GET /ebooks
@@ -6,6 +7,11 @@ class EbooksController < ApplicationController
   def index
     @ebooks = Ebook.all
   end
+
+  def set_default_img
+    @ebook.update(image: "https://img.clipartxtras.com/5fedcc84bd43eff6c6da48f5ed07c738_site-assets-books-for-school5-new-book-clipart_2400-1793.jpeg")
+  end
+
 
   # GET /ebooks/1
   # GET /ebooks/1.json
@@ -16,16 +22,6 @@ class EbooksController < ApplicationController
   # GET /ebooks/new
   def new
     @ebook = Ebook.new
-    # reader = Epub::Reader.open("/path/to/@ebook.epub")
-    # puts reader.epub_version
-    # puts reader.title
-    # puts reader.author
-    # puts reader.description
-    # puts reader.content
-    # reader.pages.each do |page|
-    #   puts page.title
-    #   puts page.content
-    # end
   end
 
   # GET /ebooks/1/edit
@@ -36,7 +32,6 @@ class EbooksController < ApplicationController
   # POST /ebooks.json
   def create
     @ebook = Ebook.new(ebook_params)
- 
     respond_to do |format|
       if @ebook.save
         format.html { redirect_to @ebook, notice: 'Ebook was successfully created.' }
@@ -80,6 +75,6 @@ class EbooksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def ebook_params
-      params.require(:ebook).permit(:title, :description, :author, :content, :file)
+      params.require(:ebook).permit(:title, :description, :author, :content, :image, :file)
     end
 end
