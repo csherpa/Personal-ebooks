@@ -1,5 +1,16 @@
+<div id= 'container1'>
+
 <p id="notice"><%= notice %></p>
 
+<div class= 'image'>
+  <%if @ebook.image.attached? %>
+  <%= image_tag(@ebook.image) %>
+  <%else%>
+      <%= image_tag("https://img.clipartxtras.com/5fedcc84bd43eff6c6da48f5ed07c738_site-assets-books-for-school5-new-book-clipart_2400-1793.jpeg")%>
+  <% end %>
+</div>
+
+<div class='mid-container'>
 <p>
   <strong>Title:</strong>
   <%= @ebook.title %>
@@ -15,5 +26,12 @@
   <%= @ebook.author %>
 </p>
 
+</p>
+  <%=link_to 'View Ebook',@ebook.file%>
+<p>
+
+</div>
 <%= link_to 'Edit', edit_ebook_path(@ebook) %> |
-<%= link_to 'Back', ebooks_path %>
+<%= link_to 'Back', welcome_index_path %> |
+<%= link_to 'Destroy', @ebook, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>

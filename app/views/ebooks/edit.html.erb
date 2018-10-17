@@ -1,6 +1,10 @@
+<div id = 'edit'>
 <h1>Editing Ebook</h1>
 
+<br>
 <%= render 'form', ebook: @ebook %>
 
-<%= link_to 'Show', @ebook %> |
-<%= link_to 'Back', ebooks_path %>
+<br>
+<span><%= link_to 'Show', @ebook, class: "btn btn-outline-warning"  %></span> |
+<span><%= link_to 'Back', welcome_index_path, class: "btn btn-outline-warning"%></span>
+</div>

@@ -13,3 +13,262 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color:whitesmoke;
+
+}
+h4{
+    margin-left: 730px;
+}
+
+.info a{
+    margin-left: 20px;
+    color: aqua;
+}
+.sidenav {
+    height: 230%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 1;
+    left: 0;
+    background-color: rgb(32, 32, 32);
+    padding-top: 110px;
+    margin-top: -40px;
+    list-style: none;
+    
+}
+.image img{
+    width: 200px;
+}
+
+.card-profile{
+    border: ridge;
+    width: 260px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#container{
+    padding: 10px;
+    padding-left: 70px;
+    background-color: whitesmoke;
+    margin-left: 300px;
+    z-index: 1;
+    top: 1;
+    left: 0;
+    margin-top: 75px;
+}
+#container1{
+    margin-left: 400px;
+    margin-top: 80px;
+}
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 240px;
+}
+
+.mid-container{
+    margin-top: 50px;
+}
+
+.navbar{
+    background-color:  rgb(32, 32, 32);
+    height: 40px;
+
+}
+#new{
+    margin-top: 80px;
+    margin-left: 500px;
+}
+#edit{
+    margin-left: 500px;
+    margin-top: 80px;
+}
+#footer{
+    margin-left: 60px;
+}
+#copyright{
+    color: aqua;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+    background: rgb(238, 85, 218);
+    color: white;
+}
+
+.devise-body{
+    background-image: url("https://images.unsplash.com/photo-1532446997697-0b92fdc456fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9d08e1ce1970558d60abd547d8fe97b2&w=1000&q=80");
+    font-family: 'Open Sans', sans-serif;
+}
+
+.input-area{
+    background-color: white;
+    width: 30%;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.input-inner{
+    align-items: center;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+}
+
+.new_admin{
+    width: 70%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.field , .actions{
+    width: 100%;
+    height: 40px;
+}
+
+#admin_email , #admin_password{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 13px;
+}
+
+
+.actions input{
+    width: 50%;
+    height: 40px;
+    background-color: #00c6c3;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 0;
+}
+.login-title{
+    color:#00c6c3;
+    font-weight: 200;
+}
+#remember{
+    height: 20px;
+}
+.school-logo{
+    text-align:center;
+    color:white;
+}
+.login-outer{
+    margin-top: 13%;
+}
+.signup-area{
+    width: 100%;
+    height: 90px;
+    background-color: #eaeaea;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95%;
+    width: 100%;
+    position: relative;
+    top: 20%;
+}
+
+.forgot-pw{
+    padding-top: 4%;
+}
+
+.forgot-pw a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;  
+}
+.show-icons{
+    display:flex;
+    width: 55px;
+    justify-content: space-between;
+}
+.show{
+    margin-top: 17px;
+    font-size: 20px;
+}
+
+
+.far{
+    font-size:20px;
+}
+
+.delete-btn-student{
+    margin-top: 3px;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.forgot-title{
+    margin-top: 60px;
+}
+
+#form_id{
+    height: 200px;
+}
+
+.edit-delete-div{
+    align-items: center;
+    display: flex;
+    width: 53px;
+    justify-content: space-between;
+    /* text-align: right; */
+    margin-left: auto;
+    margin-right: 60px;
+    margin-top: 30px;
+}
+.cohort-edit-delete-div{
+    align-items: center;
+    display: flex;
+    width: 53px;
+    justify-content: space-between;
+    margin-left: auto;
+}
+select{
+    width:352px;
+    height: 33px;
+}
+
+.nycba{
+    color:white;
+    text-decoration: none;
+}
